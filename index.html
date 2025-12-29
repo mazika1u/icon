@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>アイコンめーかー<title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+  body {
+    background:#111;
+    color:#fff;
+    font-family:system-ui;
+    text-align:center;
+    margin:0;
+    padding:20px;
+  }
+  canvas {
+    background:#000;
+    border-radius:16px;
+    touch-action:none;
+  }
+  .panel {
+    margin-top:12px;
+  }
+  input[type="range"] {
+    width:240px;
+  }
+  button {
+    margin-top:10px;
+    padding:10px 20px;
+    border:none;
+    border-radius:10px;
+    font-size:15px;
+    cursor:pointer;
+  }
+</style>
+</head>
+
+<body>
+
+<h2>アイコンめーかー<h2>
+
+<input type="file" id="upload" accept="image/*"><br><br>
+
+<canvas id="canvas" width="512" height="512"></canvas>
+
+<div class="panel">
+  <div>Zoom</div>
+  <input type="range" id="zoom" min="0.5" max="2.5" step="0.01" value="1">
+</div>
+
+<button id="download">Download</button>
+
+<script src="script.js"></script>
+</body>
+</html>
